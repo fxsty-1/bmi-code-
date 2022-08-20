@@ -1,12 +1,10 @@
 # code by @gediomr sluis on twitter
 print ("this test is for people between the ages of 19 to 70 years old.")
 
-age = input ("put age here:", )
 height = input ("height in meters here:", )
 weight = input ("weight in kg:", ) 
 
 #converting in to float
-age_l = float(age)
 weight_l = float(weight)
 height_l = float(height)
 
@@ -16,17 +14,17 @@ cal2 = (weight_l / cal)
 cal3 = round(cal2)
 
 #actions
-if cal2 <= 18.5 and age_l >= 19  :
+if cal2 <= 18.5  :
  print ("you are under weight.")
 
-elif cal2 <= 25 and age_l <= 70 :
+elif cal2 <= 25  :
     print ('you are a healthy weight.')
 
-elif cal2 <= 30 and age_l <=70 :
+elif cal2 <= 30  :
     print ("you are overweight.")
 
-elif cal2 >= 30 and age_l <= 70 :
+elif cal2 >= 30  :
     print ("you are very overweight,obesity.")
 
 else : 
- print ("pleas read instructions and re enter info ;)")
+ print ("!EROR!pleas read instructions and re enter info ;)")
